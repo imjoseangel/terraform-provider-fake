@@ -16,7 +16,7 @@ func main() {
 	flag.Parse()
 
 	if debugMode {
-		err := plugin.Debug(context.Background(), "registry.terraform.io/hashicorp/fakewebservices",
+		err := plugin.Debug(context.Background(), "registry.terraform.io/imjoseangel/fake",
 			&plugin.ServeOpts{
 				ProviderFunc: fws.Provider,
 			})
