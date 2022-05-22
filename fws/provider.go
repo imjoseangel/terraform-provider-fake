@@ -2,7 +2,7 @@ package fws
 
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-fakewebservices/client"
+	"github.com/imjoseangel/terraform-provider-fake/client"
 )
 
 // TODO: ADD DOCUMENTATION

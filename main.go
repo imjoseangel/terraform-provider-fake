@@ -6,7 +6,7 @@ import (
 	"log"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
-	"github.com/hashicorp/terraform-provider-fakewebservices/fws"
+	"github.com/imjoseangel/terraform-provider-fake/fws"
 )
 
 func main() {
