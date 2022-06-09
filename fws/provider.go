@@ -30,10 +30,7 @@ func Provider() *schema.Provider {
 			},
 		},
 		ResourcesMap: map[string]*schema.Resource{
-			"fakewebservices_server":        resourceFWSServer(),
-			"fakewebservices_database":      resourceFWSDatabase(),
-			"fakewebservices_load_balancer": resourceFWSLoadBalancer(),
-			"fakewebservices_vpc":           resourceFWSVpc(),
+			"fake_vpc": resourceFVpc(),
 		},
 		DataSourcesMap: map[string]*schema.Resource{},
 		ConfigureFunc:  providerConfigure,

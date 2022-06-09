@@ -8,12 +8,12 @@ import (
 	"github.com/imjoseangel/terraform-provider-fake/client"
 )
 
-func resourceFWSVpc() *schema.Resource {
+func resourceFVpc() *schema.Resource {
 	return &schema.Resource{
-		Create: resourceFWSVpcCreate,
-		Read:   resourceFWSVpcRead,
-		Update: resourceFWSVpcUpdate,
-		Delete: resourceFWSVpcDelete,
+		Create: resourceFVpcCreate,
+		Read:   resourceFVpcRead,
+		Update: resourceFVpcUpdate,
+		Delete: resourceFVpcDelete,
 
 		Schema: map[string]*schema.Schema{
 			"name": {
@@ -30,7 +30,7 @@ func resourceFWSVpc() *schema.Resource {
 	}
 }
 
-func resourceFWSVpcCreate(d *schema.ResourceData, meta interface{}) error {
+func resourceFVpcCreate(d *schema.ResourceData, meta interface{}) error {
 	fwsClient := meta.(*client.Client)
 
 	name := d.Get("name").(string)
@@ -57,10 +57,10 @@ func resourceFWSVpcCreate(d *schema.ResourceData, meta interface{}) error {
 
 	d.SetId(vpc.ID)
 
-	return resourceFWSVpcRead(d, meta)
+	return resourceFVpcRead(d, meta)
 }
 
-func resourceFWSVpcRead(d *schema.ResourceData, meta interface{}) error {
+func resourceFVpcRead(d *schema.ResourceData, meta interface{}) error {
 	fwsClient := meta.(*client.Client)
 
 	req, err := fwsClient.NewRequest("GET", fmt.Sprintf("vpcs/%s", d.Id()), nil)
@@ -88,7 +88,7 @@ func resourceFWSVpcRead(d *schema.ResourceData, meta interface{}) error {
 	return nil
 }
 
-func resourceFWSVpcUpdate(d *schema.ResourceData, meta interface{}) error {
+func resourceFVpcUpdate(d *schema.ResourceData, meta interface{}) error {
 	fwsClient := meta.(*client.Client)
 
 	name := d.Get("name").(string)
@@ -117,10 +117,10 @@ func resourceFWSVpcUpdate(d *schema.ResourceData, meta interface{}) error {
 		return fmt.Errorf("Error updating vpc: %v", err)
 	}
 
-	return resourceFWSVpcRead(d, meta)
+	return resourceFVpcRead(d, meta)
 }
 
-func resourceFWSVpcDelete(d *schema.ResourceData, meta interface{}) error {
+func resourceFVpcDelete(d *schema.ResourceData, meta interface{}) error {
 	fwsClient := meta.(*client.Client)
 
 	req, err := fwsClient.NewRequest(
