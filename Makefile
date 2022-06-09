@@ -8,7 +8,7 @@ build:
 
 test:
 	go test -v .
-	
+
 fmtcheck:
 	echo "Placeholder"
 
