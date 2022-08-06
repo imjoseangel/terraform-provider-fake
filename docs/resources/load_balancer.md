@@ -1,11 +1,11 @@
 ---
-page_title: "fakewebservices_load_balancer Resource - terraform-provider-fakewebservices"
+page_title: "fake_load_balancer Resource - terraform-provider-fake"
 subcategory: ""
 description: |-
   
 ---
 
-# Resource `fakewebservices_load_balancer`
+# Resource `fake_load_balancer`
 
 
 
@@ -21,5 +21,3 @@ description: |-
 
 - **id** (String) The ID of this resource.
 - **servers** (Set of String) A list of server names to attach to the load balancer.
-
-

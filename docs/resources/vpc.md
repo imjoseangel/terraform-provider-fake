@@ -1,11 +1,11 @@
 ---
-page_title: "fakewebservices_vpc Resource - terraform-provider-fakewebservices"
+page_title: "fake_vpc Resource - terraform-provider-fake"
 subcategory: ""
 description: |-
   
 ---
 
-# Resource `fakewebservices_vpc`
+# Resource `fake_vpc`
 
 
 
@@ -21,5 +21,3 @@ description: |-
 ### Optional
 
 - **id** (String) The ID of this resource.
-
-

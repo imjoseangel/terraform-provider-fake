@@ -1,6 +1,6 @@
 .terraform
 .terraform/*
-terraform-provider-fakewebservices
+terraform-provider-fake
 
 # To help with local development
 terraform.tfstate

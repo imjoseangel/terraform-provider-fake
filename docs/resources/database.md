@@ -1,11 +1,11 @@
 ---
-page_title: "fakewebservices_database Resource - terraform-provider-fakewebservices"
+page_title: "fake_database Resource - terraform-provider-fake"
 subcategory: ""
 description: |-
   
 ---
 
-# Resource `fakewebservices_database`
+# Resource `fake_database`
 
 
 
@@ -21,5 +21,3 @@ description: |-
 ### Optional
 
 - **id** (String) The ID of this resource.
-
-

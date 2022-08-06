@@ -4,7 +4,7 @@ deps:
 	go install github.com/hashicorp/terraform
 
 build:
-	go build -o terraform-provider-fakewebservices .
+	go build -o terraform-provider-fake .
 
 test:
 	go test -v .
