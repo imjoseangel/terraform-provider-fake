@@ -138,6 +138,8 @@ require (
 	github.com/xlab/treeprint v0.0.0-20161029104018-1d6e34225557 // indirect
 	github.com/zclconf/go-cty v1.10.0 // indirect
 	github.com/zclconf/go-cty-yaml v1.0.2 // indirect
+	github.com/coreos/etcd v3.3.13+incompatible
+	go.etcd.io/bbolt v1.3.5
 	go.etcd.io/etcd v0.5.0-alpha.5.0.20210428180535-15715dcf1ace // indirect
 	go.opencensus.io v0.23.0 // indirect
 	go.uber.org/atomic v1.3.2 // indirect
@@ -158,7 +160,7 @@ require (
 	google.golang.org/api v0.44.0-impersonate-preview // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20210402141018-6c239bbf2bb1 // indirect
-	google.golang.org/grpc v1.36.1 // indirect
+	google.golang.org/grpc v1.27.1 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/ini.v1 v1.66.2 // indirect
