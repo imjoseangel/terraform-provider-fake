@@ -3,7 +3,6 @@ package fws
 import (
 	"encoding/json"
 	"errors"
-	"io/ioutil"
 	"log"
 	"os"
 	"os/user"
@@ -86,7 +85,7 @@ func cliCredentials() *Credentials {
 	}
 
 	// Read the CLI config file content.
-	content, err := ioutil.ReadFile(configFilePath)
+	content, err := os.ReadFile(configFilePath)
 	if err != nil {
 		log.Printf("[ERROR] Error reading the CLI config file %s: %v", configFilePath, err)
 		return creds
