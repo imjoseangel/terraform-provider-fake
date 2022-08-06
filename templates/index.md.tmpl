@@ -1,13 +1,13 @@
 ---
 layout: ""
-page_title: "Provider: Fake Web Services"
+page_title: "Provider: Fakes"
 description: |-
   Provision Terraform Cloud or Terraform Enterprise - with Terraform! Management of organizations, workspaces, teams, variables, run triggers, policy sets, and more. Maintained by the Terraform Cloud team at HashiCorp.
 ---
 
-# "Fake Web Services" Provider
+# "Fakes" Provider
 
-This provider provisions "resources" to a fictitious cloud provider, "Fake Web Services" - used in the [TFC Getting Started project](https://github.com/hashicorp/tfc-getting-started).
+This provider provisions "resources" to a fictitious cloud provider, "Fakes" - used in the [TFC Getting Started project](https://github.com/hashicorp/tfc-getting-started).
 
 These resources are purely for demonstration and created in Terraform Cloud, scoped to your TFC user account.
 

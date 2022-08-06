@@ -1,6 +1,6 @@
-# Terraform "Fake Web Services" Provider
+# Terraform "Fakes" Provider
 
-This provider provisions "resources" to a fictitious cloud provider, "Fake Web Services" - used in the [TFC Getting Started project](https://github.com/hashicorp/tfc-getting-started).
+This provider provisions "resources" to a fictitious cloud provider, "Fakes" - used in the [TFC Getting Started project](https://github.com/hashicorp/tfc-getting-started).
 
 These resources are purely for demonstration and created in Terraform Cloud, scoped to your TFC user account.
 
