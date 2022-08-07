@@ -1,6 +1,7 @@
 default: build plan
 
 deps:
+	go get github.com/hashicorp/terraform
 	go install github.com/hashicorp/terraform
 
 build:
