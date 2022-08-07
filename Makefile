@@ -1,5 +1,8 @@
 default: build plan
 
+clean:
+	go clean -modcache
+
 deps:
 	go get github.com/hashicorp/terraform
 	go install github.com/hashicorp/terraform
